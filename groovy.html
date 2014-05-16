@@ -1,0 +1,302 @@
+
+<html>
+<head>
+<script src="lib/prototype.js"></script>
+<script src="src/scriptaculous.js"></script>
+<script type='text/javascript'>
+function whatever(){
+	var i;
+	/*new Effect.Move($('object'),{x:000,y:400,queue:'end'});
+	new Effect.Move($('object'),{x:400,queue:'end'});
+	new Effect.Move($('object'),{x:-400,y:-400,queue:'end'});
+	new Effect.Move($('otherobject'),{x:000,y:400,queue:{scope:'other',position:'end'}});
+	new Effect.Move($('otherobject'),{x:-400,y:0,queue:{scope:'other',position:'end'}});
+	new Effect.Move($('otherobject'),{x:400,y:-400,queue:{scope:'other',position:'end'}});*/
+	var x, y;
+	for(i = 0;i < 32;i++){
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = Math.random() * 1500;
+		y = Math.random() * 900;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+		x = (i%40) * 30 + 100;
+		y = Math.floor((i / 40))*30+100;
+	new Effect.Move($('otherobject'+i),{x:x,y:y,mode:'absolute',queue:{scope:'other'+i,position:'end'}});
+	}
+}
+</script>
+<style type="text/css">
+#object {position:absolute;
+	top:400px;
+	left:400px;
+	width:30px;
+	height:30px;
+	background-color:blue;
+}
+#otherobject {position:absolute;
+	top:100px;
+	left:130px;
+	width:30px;
+	height:30px;
+	background-color:red;
+}
+#otherobject0 {	position:absolute;
+	top:100px;
+	left:100px;
+	width:30px;
+	height:30px;
+	background-color:#ccc;
+}
+	#otherobject1 {	position:absolute;
+	top:100px;
+	left:130px;
+	width:30px;
+	height:30px;
+	background-color:red;
+}
+	#otherobject2 {	position:absolute;
+	top:100px;
+	left:160px;
+	width:30px;
+	height:30px;
+	background-color:green;
+}
+	#otherobject3 {	position:absolute;
+	top:100px;
+	left:190px;
+	width:30px;
+	height:30px;
+	background-color:blue;
+}
+	#otherobject4 {	position:absolute;
+	top:100px;
+	left:220px;
+	width:30px;
+	height:30px;
+	background-color:cyan;
+}
+	#otherobject5 {	position:absolute;
+	top:100px;
+	left:250px;
+	width:30px;
+	height:30px;
+	background-color:purple;
+}
+	#otherobject6 {	position:absolute;
+	top:100px;
+	left:280px;
+	width:30px;
+	height:30px;
+	background-color:yellow;
+}
+	#otherobject7 {	position:absolute;
+	top:100px;
+	left:310px;
+	width:30px;
+	height:30px;
+	background-color:magenta;
+}
+	#otherobject8 {	position:absolute;
+	top:100px;
+	left:340px;
+	width:30px;
+	height:30px;
+	background-color:black;
+}
+	#otherobject9 {	position:absolute;
+	top:100px;
+	left:370px;
+	width:30px;
+	height:30px;
+	background-color:gray;
+}
+	#otherobject10 {	position:absolute;
+	top:100px;
+	left:400px;
+	width:30px;
+	height:30px;
+	background-color:#ccc;
+}
+	#otherobject11 {	position:absolute;
+	top:100px;
+	left:430px;
+	width:30px;
+	height:30px;
+	background-color:red;
+}
+	#otherobject12 {	position:absolute;
+	top:100px;
+	left:460px;
+	width:30px;
+	height:30px;
+	background-color:green;
+}
+	#otherobject13 {	position:absolute;
+	top:100px;
+	left:490px;
+	width:30px;
+	height:30px;
+	background-color:blue;
+}
+	#otherobject14 {	position:absolute;
+	top:100px;
+	left:520px;
+	width:30px;
+	height:30px;
+	background-color:cyan;
+}
+	#otherobject15 {	position:absolute;
+	top:100px;
+	left:550px;
+	width:30px;
+	height:30px;
+	background-color:purple;
+}
+	#otherobject16 {	position:absolute;
+	top:100px;
+	left:580px;
+	width:30px;
+	height:30px;
+	background-color:yellow;
+}
+	#otherobject17 {	position:absolute;
+	top:100px;
+	left:610px;
+	width:30px;
+	height:30px;
+	background-color:magenta;
+}
+	#otherobject18 {	position:absolute;
+	top:100px;
+	left:640px;
+	width:30px;
+	height:30px;
+	background-color:black;
+}
+	#otherobject19 {	position:absolute;
+	top:100px;
+	left:670px;
+	width:30px;
+	height:30px;
+	background-color:gray;
+}
+	#otherobject20 {	position:absolute;
+	top:100px;
+	left:700px;
+	width:30px;
+	height:30px;
+	background-color:#ccc;
+}
+	#otherobject21 {	position:absolute;
+	top:100px;
+	left:730px;
+	width:30px;
+	height:30px;
+	background-color:red;
+}
+	#otherobject22 {	position:absolute;
+	top:100px;
+	left:760px;
+	width:30px;
+	height:30px;
+	background-color:green;
+}
+	#otherobject23 {	position:absolute;
+	top:100px;
+	left:790px;
+	width:30px;
+	height:30px;
+	background-color:blue;
+}
+	#otherobject24 {	position:absolute;
+	top:100px;
+	left:820px;
+	width:30px;
+	height:30px;
+	background-color:cyan;
+}
+	#otherobject25 {	position:absolute;
+	top:100px;
+	left:850px;
+	width:30px;
+	height:30px;
+	background-color:purple;
+}
+	#otherobject26 {	position:absolute;
+	top:100px;
+	left:880px;
+	width:30px;
+	height:30px;
+	background-color:yellow;
+}
+	#otherobject27 {	position:absolute;
+	top:100px;
+	left:910px;
+	width:30px;
+	height:30px;
+	background-color:magenta;
+}
+	#otherobject28 {	position:absolute;
+	top:100px;
+	left:940px;
+	width:30px;
+	height:30px;
+	background-color:black;
+}
+	#otherobject29 {	position:absolute;
+	top:100px;
+	left:970px;
+	width:30px;
+	height:30px;
+	background-color:gray;
+}
+	#otherobject30 {	position:absolute;
+	top:100px;
+	left:1000px;
+	width:30px;
+	height:30px;
+	background-color:#ccc;
+}
+	#otherobject31 {	position:absolute;
+	top:100px;
+	left:1030px;
+	width:30px;
+	height:30px;
+	background-color:red;
+}
+	</style>
+</head>
+<body onload="whatever();" onclick="whatever();">
+<div id="otherobject0"></div><div id="otherobject1"></div><div id="otherobject2"></div><div id="otherobject3"></div><div id="otherobject4"></div><div id="otherobject5"></div><div id="otherobject6"></div><div id="otherobject7"></div><div id="otherobject8"></div><div id="otherobject9"></div><div id="otherobject10"></div><div id="otherobject11"></div><div id="otherobject12"></div><div id="otherobject13"></div><div id="otherobject14"></div><div id="otherobject15"></div><div id="otherobject16"></div><div id="otherobject17"></div><div id="otherobject18"></div><div id="otherobject19"></div><div id="otherobject20"></div><div id="otherobject21"></div><div id="otherobject22"></div><div id="otherobject23"></div><div id="otherobject24"></div><div id="otherobject25"></div><div id="otherobject26"></div><div id="otherobject27"></div><div id="otherobject28"></div><div id="otherobject29"></div><div id="otherobject30"></div><div id="otherobject31"></div></body>
+</html>
